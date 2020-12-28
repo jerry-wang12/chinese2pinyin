@@ -6,7 +6,6 @@
   "module": "lib/bundle.esm.js",
   "scripts": {
     "build": "rollup -c",
-    "build:type": "tsc -p ./tsconfig.type.json",
     "test": "jest --config=./jest.config.js --no-cache --coverage"
   },
   "keywords": [
@@ -15,13 +14,13 @@
   "author": "jerry",
   "license": "ISC",
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.1.0",
-    "@types/jest": "^24.0.19",
+    "@types/jest": "^24.9.1",
     "jest": "^24.9.0",
-    "rollup": "^1.23.1",
+    "rollup": "^1.32.1",
     "rollup-plugin-sourcemaps": "^0.4.2",
-    "ts-jest": "^24.1.0",
-    "tslib": "^1.10.0",
-    "typescript": "^3.6.4"
+    "rollup-plugin-typescript": "^1.0.1",
+    "ts-jest": "^24.3.0",
+    "tslib": "^1.14.1",
+    "typescript": "^3.9.7"
   }
 }

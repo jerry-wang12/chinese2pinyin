@@ -1,14 +1,9 @@
 import pkg from "./package.json";
-import typescript from "@rollup/plugin-typescript";
+import typescript from "rollup-plugin-typescript";
 import sourceMaps from "rollup-plugin-sourcemaps";
 
 export default {
   input: "src/index.ts",
-  output: {
-    dir: "output",
-    format: "cjs",
-  },
-  plugins: [typescript(), sourceMaps()],
   output: [
     {
       format: "cjs",
@@ -21,4 +16,5 @@ export default {
       sourcemap: true,
     },
   ],
+  plugins: [typescript(), sourceMaps()],
 };
