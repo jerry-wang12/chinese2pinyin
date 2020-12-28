@@ -1,6 +1,7 @@
 import pkg from "./package.json";
 import typescript from "rollup-plugin-typescript";
 import sourceMaps from "rollup-plugin-sourcemaps";
+import { terser } from "rollup-plugin-terser";
 
 export default {
   input: "src/index.ts",
@@ -16,5 +17,5 @@ export default {
       sourcemap: true,
     },
   ],
-  plugins: [typescript(), sourceMaps()],
+  plugins: [typescript(), terser(), sourceMaps()],
 };

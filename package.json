@@ -1,6 +1,6 @@
 {
-  "name": "chinese2pinyin",
-  "version": "1.0.0",
+  "name": "convert2pinyin",
+  "version": "1.0.1",
   "description": "汉字转换拼音（首字母）",
   "main": "lib/bundle.cjs.js",
   "module": "lib/bundle.esm.js",
@@ -18,9 +18,18 @@
     "jest": "^24.9.0",
     "rollup": "^1.32.1",
     "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript": "^1.0.1",
     "ts-jest": "^24.3.0",
     "tslib": "^1.14.1",
     "typescript": "^3.9.7"
-  }
+  },
+  "dependencies": {
+    "chinese2pinyin": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jerry-wang12/chinese2pinyin.git"
+  },
+  "homepage": "https://github.com/jerry-wang12/chinese2pinyin"
 }
