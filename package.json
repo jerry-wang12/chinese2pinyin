@@ -25,9 +25,6 @@
     "tslib": "^1.14.1",
     "typescript": "^3.9.7"
   },
-  "dependencies": {
-    "chinese2pinyin": "^1.0.1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jerry-wang12/chinese2pinyin.git"
