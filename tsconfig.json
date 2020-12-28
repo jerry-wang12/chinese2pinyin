@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "declaration": true,
+    "target": "es5",
+    "declaration": true
   },
   "include": ["src", "types"],
   "exclude": ["node_modules", "build", "dist", "example", "rollup.config.js"]
