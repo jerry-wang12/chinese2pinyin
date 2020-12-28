@@ -9,6 +9,9 @@ const wordBreak: IBreak = (input) => {
 };
 
 const convert: IConvert = (input, options) => {
+  if (!input || typeof input !== "string") {
+    return input;
+  }
   const { format = "first", upper = true, hyphen = "" } = options || {};
   let result = "";
   let array = wordBreak(input).map((char) => dict[char] || char);

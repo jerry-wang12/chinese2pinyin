@@ -1,4 +1,6 @@
-const dict: { [key: string]: string } = {
+import { IDict } from "../types";
+
+const dict: IDict = {
   阿: "e",
   啊: "a",
   呵: "ke",
